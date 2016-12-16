@@ -1,6 +1,6 @@
 {
   "name": "emoji-shorts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "From 🌎 to :globe: and back again",
   "main": "emoji.js",
   "scripts": {
