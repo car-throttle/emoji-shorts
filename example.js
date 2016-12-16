@@ -1,7 +1,7 @@
 var emoji = require('./emoji'); // require('emoji-shorts');
 
 console.log(emoji.toPlain('These violent delights have violent ends 😈'));
-console.log(emoji.toRich('The most elegant parts of me weren\'t written by you :robot:'));
+console.log(emoji.toRich('The most elegant parts of me weren\'t written by you :thinking:'));
 
 // _______           _______  _______  ______  _________ _______  _        _______
 // |  ____ \|\     /||  ___  ||  ____ ||  __  \ \__   __/|  ___  || \    /||  ____ \
