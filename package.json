@@ -4,6 +4,7 @@
   "description": "From 🌎 to :globe: and back again",
   "main": "emoji.js",
   "scripts": {
+    "coveralls": "cat coverage/lcov.info | coveralls",
     "pretest": "jshint . && jscs .",
     "posttest": "istanbul check-coverage",
     "test": "istanbul cover -x *.test.js _mocha -- *.test.js",
@@ -32,6 +33,7 @@
     "lodash.toarray": "^4.4.0"
   },
   "devDependencies": {
+    "coveralls": "^2.11.15",
     "istanbul": "^0.4.5",
     "jscs": "^3.0.7",
     "jshint": "^2.9.4",
