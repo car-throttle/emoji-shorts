@@ -1,7 +1,7 @@
 ![Love the Pixar Shorts](./image.gif)
 
 [![NPM Version](https://badge.fury.io/js/emoji-shorts.svg)](https://www.npmjs.com/package/emoji-shorts)
-[![CircleCI](https://circleci.com/gh/car-throttle/emoji-shorts/tree/master.svg?style=svg)](https://circleci.com/gh/car-throttle/emoji-shorts/tree/master)
+[![CircleCI](https://circleci.com/gh/car-throttle/emoji-shorts/tree/master.svg?style=svg?style=shield)](https://circleci.com/gh/car-throttle/emoji-shorts/tree/master)
 [![Coverage Status](https://coveralls.io/repos/github/car-throttle/emoji-shorts/badge.svg?branch=master)](https://coveralls.io/github/car-throttle/emoji-shorts?branch=master)
 
 Plenty of services love to use the emoji shortcodes in plain-text markup, so this library aims to simplify that process
