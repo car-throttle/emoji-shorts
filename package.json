@@ -1,0 +1,41 @@
+{
+  "name": "emoji-shorts",
+  "version": "1.0.0",
+  "description": "From 🌎 to :globe: and back again",
+  "main": "emoji.js",
+  "scripts": {
+    "pretest": "jshint . && jscs .",
+    "posttest": "istanbul check-coverage",
+    "test": "istanbul cover -x *.test.js _mocha -- *.test.js",
+    "try": "nodemon example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/car-throttle/emoji-shorts.git"
+  },
+  "keywords": [
+    "emoji",
+    "shorts",
+    "shortcodes"
+  ],
+  "files": [
+    "emoji.js"
+  ],
+  "author": "James D <james@jdrydn.com> (https://jdrydn.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/car-throttle/emoji-shorts/issues"
+  },
+  "homepage": "https://github.com/car-throttle/emoji-shorts#readme",
+  "dependencies": {
+    "lodash.toarray": "^4.4.0",
+    "mojier": "^1.0.8"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.4",
+    "mocha": "^3.0.2",
+    "nodemon": "^1.11.0"
+  }
+}
