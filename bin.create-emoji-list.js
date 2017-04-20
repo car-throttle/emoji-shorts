@@ -25,18 +25,17 @@ request({
     emoji_map[emoji.emoji] = emoji.aliases.shift();
   });
 
-  fs.writeFile(
-    path.join(__dirname, '..', 'library.json'), JSON.stringify({ alias: alias_map, emoji: emoji_map }),
-    'utf8', function (err) {
-      if (err) throw err;
+  fs.writeFileSync(path.join(__dirname, 'library.json'), JSON.stringify({
+    alias: alias_map,
+    emoji: emoji_map,
+    timestamp: (new Date()).toUTCString(),
+  }, null, 2), 'utf8');
 
-      console.log(
-        'Formatted %d emojis into %d aliases and %d emojis',
-        emojis.length, Object.keys(alias_map).length, Object.keys(emoji_map).length
-      );
-
-      console.log('Created library.json');
-      process.exit(0);
-    }
+  console.log(
+    'Formatted %d emojis into %d aliases and %d emojis',
+    emojis.length, Object.keys(alias_map).length, Object.keys(emoji_map).length
   );
+
+  console.log('Created library.json');
+  process.exit(0);
 });
